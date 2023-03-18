@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+html, body {
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+#home, #about, #projects {
+    position: absolute;
+    width: 100%;
+}
+
+h1 {
+    position: relative;
+    padding-left: 2%;
+    padding-top: 5%;
+    width: 98%;
+    text-align: left;
+    display:block;
+    color: white;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 150px;
+    word-wrap:break-word;
+}
+
+#btn0xChessClub {
+    border: 1px solid white;
+    width: 60%;
+    margin-left: 20%;
+    background: none;
+    text-align: center;
+    color: white;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 75px;
+    display: grid;
+}
+
+#btnTitle, #plug {
+    word-wrap: break-word;
+    word-break: break-all;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#btn0xChessClub:hover #btnTitle {
+    opacity: 0.2;
+}
+
+#btn0xChessClub #plug {
+    padding-top: 10px;
+    font-size: 20px;
+    visibility: hidden;
+}
+
+#btn0xChessClub:hover #plug {
+    visibility: visible;
+    font-size: 20px;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+#btnHome, #btnAbout, #btnProjects {
+    border: none;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+
+#navbar {
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+    color: white;
+    font-family: monospace;
+    text-align: right;
+    padding-top: 1%;
+}
+
+#footer {
+    z-index: 2;
+    position: fixed;
+    right: 0;
+    bottom: 5px;
+    width: 100%;
+    font-family: monospace;
+    color: white;
+    text-align: right;
+}
+
+#homeText, #aboutText {
+    display:block;
+    color: white;
+    position: relative;
+    padding-left: 40%;
+    width: 50%;
+    text-align: left;
+    font-family: monospace;
+    font-size: 30px;
+    word-wrap:break-word;
+}
+
+#aboutText {
+    padding-left: 16%;
+    font-size: 20px;
+    line-height: 130%;
+}

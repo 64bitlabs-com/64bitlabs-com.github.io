@@ -1,3 +1,7 @@
 # Intellij
 .idea
 *.iml
+.DS_Store
+
+# JavaScript
+node_modules
