@@ -1,9 +1,12 @@
 {
   "name": "sixtyfourbitlabs",
   "version": "1.0.0",
+  "homepage": "https://64bitlabs-com.github.io/64bitlabs.com",
   "scripts": {
     "dev": "webpack serve --config ./src/client/webpack.dev.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "@types/three": "^0.149.0",
@@ -14,5 +17,8 @@
     "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^4.11.1",
     "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
