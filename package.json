@@ -1,7 +1,7 @@
 {
   "name": "sixtyfourbitlabs",
   "version": "1.0.0",
-  "homepage": "https://64bitlabs-com.github.io/64bitlabs.com",
+  "homepage": "https://64bitlabs.com",
   "scripts": {
     "dev": "webpack serve --config ./src/client/webpack.dev.js",
     "test": "echo \"Error: no test specified\" && exit 1",
